@@ -32,3 +32,8 @@ CAPSTONE2/
 
 git remote add origin https://github.com/Barry-owino/alx-prodevproject-nexus.git
 cd CAPSTONE2/ecommerce_backend
+
+📖 API Documentation
+Once the server is running, you can explore the API docs:
+   Swagger UI → http://127.0.0.1:8000/api/docs/
+   ReDoc → http://127.0.0.1:8000/api/redoc/
