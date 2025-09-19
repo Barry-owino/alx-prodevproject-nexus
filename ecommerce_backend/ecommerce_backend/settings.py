@@ -51,6 +51,8 @@ INSTALLED_APPS = [
     'payments',
 ]
 
+INSTALLED_APPS += ["rest_framework.authtoken"]
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',  # enable Whitenoise
@@ -64,7 +66,8 @@ MIDDLEWARE = [
 
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": (
-        "rest_framework_simplejwt.authentication.JWTAuthentication",
+       #"rest_framework_simplejwt.authentication.JWTAuthentication",
+       "rest_framework.authentication.TokenAuthentication",
     ),
     "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
 }
