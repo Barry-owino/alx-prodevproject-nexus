@@ -45,10 +45,10 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt', 
     'drf_spectacular',
 
-    'users_app',
-    'products_app',
-    'orders_app',
-    'payments_app',
+    'users',
+    'products',
+    'orders',
+    'payments',
 ]
 
 MIDDLEWARE = [
@@ -112,6 +112,7 @@ DATABASES = {
     }
 }
 
+AUTH_USER_MODEL = "users.CustomUser"
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
